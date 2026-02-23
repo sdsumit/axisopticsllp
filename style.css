@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background: #0b2c4a;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.hero {
+    padding: 100px 0;
+    text-align: center;
+    background: #f4f7fb;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    color: #0b2c4a;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    color: #555;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #0b2c4a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #164a7a;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #0b2c4a;
+}
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.alt-bg {
+    background: #f9fbfd;
+}
+
+.products {
+    margin-bottom: 40px;
+}
+
+.product-block {
+    margin-bottom: 25px;
+}
+
+.product-block h4 {
+    color: #0b2c4a;
+    margin-bottom: 8px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #e3e8ef;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.card h5 {
+    margin-bottom: 10px;
+    color: #0b2c4a;
+}
+
+.contact-container {
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccd6e0;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #0b2c4a;
+}
+
+.contact-details {
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.map-placeholder iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+}
+
+@media (min-width: 768px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+}
